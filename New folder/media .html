@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one
+        {
+            background-color: blueviolet;
+        }
+        .two
+        {
+            background-color: blue;
+        }
+        .three
+        {
+            background-color: brown;
+        }
+
+        @media (min-width:801px)  and(max-width:1000px)
+        {
+            .container p{
+                float: left;
+                width: 30%;
+                padding: 10px;
+            };
+        }
+        @media print {
+            p{
+                font-size: 2em;
+                background-color: none;
+            }   
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, harum voluptas est a sit quidem nulla at qui velit laudantium sint quaerat nam sapiente cumque deserunt vel perspiciatis asperiores hic.</p>
+        <p class="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum perspiciatis eum? Illo hic ut cum ipsa numquam doloremque, quod laboriosam harum voluptatem, similique blanditiis molestias minima nostrum asperiores praesentium!</p>
+        <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, molestiae? Quidem sapiente molestiae tempora eveniet porro, rerum illo, explicabo laboriosam ad quod ut ea quaerat veritatis? Minus, velit? Soluta, a.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1
+        {
+            background-color: yellowgreen;
+            width:150px;
+            height:150px;
+            border:2px solid rgb(233, 229, 229);
+            padding: 20px;
+            text-align: center;
+        }
+        .flex
+        {
+            display: flex;
+            background-color: blueviolet;
+          /*  flex-direction: column;
+            flex-direction: column-reverse;*/
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div id="box1">1</div>
+        <div id="box1">2</div>
+        <div id="box1">3</div>
+        <div id="box1">4</div>
+        <div id="box1">5</div>
+        <div id="box1">6</div>
+        <div id="box1">7</div>
+        <div id="box1">8</div>
+
+    </div>
+</body>
+</html>

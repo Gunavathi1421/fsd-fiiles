@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+    .container{
+      display: grid;
+      border: 3px solid green;
+      height: 90vh;
+      padding: 10px;
+      font-size: 2em;
+      font-family: 'Lucida Sans', 'Lucida Sans
+       Regular', 'Lucida Grande', 'Lucida Sans 
+       Unicode', Geneva, Verdana, sans-serif
+       grid-template-columns:repeat(5,1fr) ;
+       grid-template-areas: 'h h h h h '
+       'm ma ma ma s'  
+       'f f f f f';
+       gap: 10px;
+    
+    }
+
+    .container div{
+      padding: 20px;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  
+      
+    }
+       .item1
+       {
+        background-color: aqua;
+        grid-area: h;
+       }
+       .item2
+       {
+        background-color:hwb(0 1% 43%);
+        grid-area:m ;
+       }
+       .item3
+      {
+        background-color: rgb(169, 150, 160);
+        grid-area: ma;
+      }
+      .item4
+      {
+        background-color: rgb(49, 188, 11);
+        grid-area: s;
+      }
+      .item5
+      {
+        background-color: rgb(24, 24, 182);
+        grid-area:f ;
+      }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="item1">header</div>
+    <div class="item2">menu</div>
+    <div class="item3">main</div>
+    <div class="item4">sidebar</div>
+    <div class="item5">footer</div>
+
+  </div>
+</body>
+</html>
